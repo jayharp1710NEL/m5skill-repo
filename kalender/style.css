@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.calender{
+    width: 700px;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
+}
+
+#date{
+    text-align: center;
+}
+
+.navbutton{
+    padding: 5px;
+    cursor: pointer;
+}
+
+.weekdays{
+    display: grid;
+    grid-template-columns: repeat(7, 100px);
+    list-style: none;
+}
+
+.weekday{
+    text-align: center;
+}
+
+.days{
+    display: grid;
+    grid-template-columns: repeat(7, 100px);
+    list-style: none;
+}
+
+.day{
+    aspect-ratio: 3/2;
+    outline: 1px solid black;
+}
+
+.empty{
+    aspect-ratio: 3/2;
+    outline: 1px solid black;
+    background-color: #e6e6e6;
+    color: #999;
+}
