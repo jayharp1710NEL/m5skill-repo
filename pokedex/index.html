@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="pokemon">
+        <h1 class="title">Pokedex</h1>
+
+        <form class="search" id="search-form">
+            <input type="text" id="search-input" value="31">
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Section voor de naam en types -->
+        <section class="info">
+            <h2 class="name" id="name">Name</h2>
+            <div class="types" id="types"></div>
+        </section>
+
+        <!-- Section voor de afbeelding -->
+        <section class="image">
+            <img class="image" id="image"
+                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect width='300' height='300' rx='12' fill='%23cfd4d8'/%3E%3Ctext x='50%25' y='50%25' font-size='120' fill='%23ffffff' text-anchor='middle' dominant-baseline='central' font-family='Arial'%3F%3F%3C/text%3E%3C/svg%3E"
+                 alt="Pokemon afbeelding">
+        </section>
+
+        <!-- Section voor de stats -->
+        <section class="stats">
+            <h3>Stats</h3>
+            <ul id="stats">
+                <li class="stat"></li>
+                <li class="stat"></li>
+                <li class="stat"></li>
+                <li class="stat"></li>
+                <li class="stat"></li>
+                <li class="stat"></li>
+            </ul>
+        </section>
+
+        <!-- Section voor de moves -->
+        <section class="moves">
+            <h3>moves</h3>
+            <ul id="moves"></ul>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

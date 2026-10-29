@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    color: #000;
+    background-color: #fafafa;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.app{
+    max-width: 47rem;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1.2rem;
+}
+
+.logo{
+    font-family: "Grand Hotel", cursive;
+    font-size: 3.2rem;
+    font-weight: normal;
+}
+
+.header-icons{
+    display: flex;
+    gap: 1.6rem;
+}
+
+.icon-button{
+    display: flex;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.icon-button svg{
+    width: 2.8rem;
+    height: 2.8rem;
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+    stroke-linejoin: round;
+}
+
+.post-header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 1.2rem;
+}
+
+.post-avatar{
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-username{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.post-image{
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.post-buttons{
+    display: flex;
+    gap: 1.6rem;
+    padding: 1rem 1.2rem 0.6rem;
+}
+
+.save-button{
+    margin-left: auto;
+}
+
+.post-likes{
+    padding: 0 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.post-text{
+    padding: 0.4rem 1.2rem 0.4rem;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+.post-comments{
+    display: block;
+    padding: 0 1.2rem 1.6rem;
+    font-size: 1.4rem;
+    color: #737373;
+}

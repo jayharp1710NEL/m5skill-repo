@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1a1a2e;
+    background: linear-gradient(160deg, #e8edf5 0%, #d6e0f0 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* 2-koloms layout: info + afbeelding boven, stats + moves onder */
+.pokemon {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Titel en zoekbalk over de volle breedte */
+.title {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.search {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.search input {
+    padding: 4px 6px;
+    font-size: 1rem;
+    border: 1px solid #999;
+}
+
+.search button {
+    padding: 4px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Gedeelde kaart-opmaak voor de 4 sections */
+.info,
+.image,
+.stats,
+.moves {
+    background: linear-gradient(160deg, #f6f8fc 0%, #e3eaf5 100%);
+    border: 1px solid #c3cfe0;
+    border-radius: 14px;
+    padding: 20px;
+}
+
+/* Section: naam en types */
+.name {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.types {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.type {
+    color: #fff;
+    font-weight: bold;
+    text-transform: lowercase;
+    padding: 8px 28px;
+    border-radius: 20px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* Section: afbeelding */
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img.image {
+    width: 100%;
+    max-width: 320px;
+    background: #cfd4d8;
+    border-radius: 12px;
+}
+
+/* Section: stats */
+.stats h3,
+.moves h3 {
+    font-size: 1.4rem;
+    margin-bottom: 14px;
+}
+
+#stats {
+    list-style: none;
+}
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    font-size: 1.05rem;
+}
+
+.stat .stat-name {
+    font-weight: bold;
+}
+
+/* Section: moves */
+.moves {
+    max-height: 320px;
+    overflow-y: auto;
+}
+
+#moves {
+    list-style: none;
+}
+
+#moves li {
+    padding: 8px 4px;
+    border-bottom: 1px solid #c3cfe0;
+    text-transform: capitalize;
+}
+
+/* Type-kleuren */
+.type-normal   { background: #a8a77a; }
+.type-fire     { background: #ee8130; }
+.type-water    { background: #6390f0; }
+.type-electric { background: #f7d02c; }
+.type-grass    { background: #7ac74c; }
+.type-ice      { background: #96d9d6; }
+.type-fighting { background: #c22e28; }
+.type-poison   { background: #a33ea1; }
+.type-ground   { background: #e2bf65; }
+.type-flying   { background: #a98ff3; }
+.type-psychic  { background: #f95587; }
+.type-bug      { background: #a6b91a; }
+.type-rock     { background: #b6a136; }
+.type-ghost    { background: #735797; }
+.type-dragon   { background: #6f35fc; }
+.type-dark     { background: #705746; }
+.type-steel    { background: #b7b7ce; }
+.type-fairy    { background: #d685ad; }
+
+/* Smaller schermen: alles onder elkaar */
+@media (max-width: 700px) {
+    .pokemon {
+        grid-template-columns: 1fr;
+    }
+}
